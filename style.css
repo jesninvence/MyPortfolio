@@ -45,8 +45,13 @@
     .logo {
         font-size: 40px !important;
     }
-    .hide-sm {
+}
+@media screen and (max-width: 622px) {
+    .hide-lg {
         display: none !important;
+    }
+    .home .disc {
+        width: 100%;
     }
 }
 
@@ -86,10 +91,11 @@
         width: 100%;
     }
     .home .home-content {
+        margin-left: 0rem !important;
         margin-top: 0rem;
     }
     .home-content h3 {
-        font-size: 23px !important;
+        font-size: 20px !important;
     }
     .home-content h1 {
         font-size: 40px !important;
@@ -107,6 +113,28 @@
     }
     .home .home-content a {
         font-size: 15px;
+    }
+    .home .profile {
+        margin-top: 6rem !important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-content span {
+        font-size: 23px !important;
+    }
+    .home-content h3 {
+        font-size: 22px !important;
+    }
+    .home-content {
+        margin-left: 1rem !important;
+    }
+    .home .disc {
+        margin-left: 1rem;
+    }
+    .hide-sm {
+        display: none !important;
     }
 }
 
@@ -243,13 +271,13 @@
 }
 
 .about .disc {
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 .about p {
-    color: rgb(195, 195, 195);
+    color: rgb(223, 223, 223);
     font-family: "Montserrat", sans-serif;
-    box-shadow: 0 0 0 1px rgba(95, 95, 95, 0.756);
+    box-shadow: 0 0 0 1px rgba(112, 112, 112, 0.756);
     padding: 10px 20px;
     transition: .3s;
 }
@@ -272,8 +300,26 @@
         margin-bottom: 8rem !important;
     }
     .about h1 {
+        margin-left: 2rem;
         margin-top: 6rem;
         font-size: 40px !important;
+    }
+    .about img {
+        width: 130%;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 868px) {
+    .hide-md {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 622px) {
+    .about .disc {
+        width: 100%;
+    }
+    .about .disc h1 {
+        margin-left: 0rem !important;
     }
 }
 
@@ -378,7 +424,15 @@
         width: 100%;
     }
 }
-
+@media screen and (max-width: 622px) {
+    .skill {
+        width: 100%
+    }
+    .skill .card {
+        width: 100%;
+        height: 100%
+    }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira+Mono:wght@500&display=swap');
 
@@ -521,7 +575,6 @@ a {
 
 /********************************************/
 
-
 form {
     width: 100%;
     max-width: 600px;
@@ -598,12 +651,6 @@ p {
     font-size: 40px;
 }
 
-.container .footer {
-    position: relative;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.566);
-}
-
 #contact {
     margin-top: 7rem;
     margin-bottom: 7rem;
@@ -632,21 +679,34 @@ hr {
         margin-bottom: 3rem;
     }
 }
+@media screen and (max-width: 622px) {
+    .contact {
+        width: 100%;
+    }
+    .contact .col-12 .disc {
+        width: 100% !important;
+    }
+    .contact .fill {
+        width: 100%;
+    }
+}
 
-.container .footer p {
+.footer {
+    position: relative;
+    border-top: 1px solid rgba(44, 171, 15, 0.361);
+    background-color: rgba(0, 0, 0, 0.689);
+}
+
+.footer p {
     background-color: transparent !important;
     font-family: "Montserrat", sans-serif;
     color: rgb(195, 195, 195);
     font-size: 15px;
 }
 
-.container .footer p span a {
+.footer p span a {
     margin-left: 3px !important;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: rgb(44, 171, 15);
-}
-
-.container .footer a img {
-    width: 50px;
 }
