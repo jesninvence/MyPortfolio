@@ -25,9 +25,9 @@
 </head>
 <body>
     <div id="particles-js"></div>
-    <header class="header">
+    <header class="header hide-sm hide-lg">
         <a href="" class="logo">JV</a>
-        <nav class="navbar hide-sm hide-lg">
+        <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skill">Services</a>
@@ -35,6 +35,46 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+    <nav class="navbar fixed-top hide-xlg display-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JV</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skill">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-footer text-center">
+                    <a href="https://www.facebook.com/vence.stopid"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/elshhhnin/"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/jesninvence"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jesnin-vence-1715ab295/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+      </nav>
     <section class="home" id="home">
         <div class="container">
             <div class="row g-3">
