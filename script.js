@@ -5,7 +5,7 @@ var typed = new Typed(".auto-type", {
     loop: true
 })
 
-// ============ SLIDE ANIMATION ========== \\
+// ============ AOS SLIDE ANIMATION ========== \\
 
 AOS.init();
 
@@ -24,3 +24,24 @@ function SendMail() {
 function SendMail() {
     alert("Message sent successfully!");
 }
+
+/*============== SWIPER =============*/
+
+function addSwiper() {
+    const swiper = new Swiper('#product-swiped', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop : true,
+        slidesPerView: 1,
+        spaceBetween: 5,
+        freeMode: {
+            enabled: true,
+            sticky: true,
+        },
+        autoplay : {
+            delay : 2000
+        }
+    });
+}
+
+addSwiper()
