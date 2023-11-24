@@ -109,7 +109,7 @@
     }
     .navbar .offcanvas-body li a {
         color: white !important;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Source Code Pro", sans-serif;
         margin-bottom: 1rem;
     }
     .navbar .nav-footer {
@@ -273,7 +273,6 @@
 
 .home .card .profile {
     margin-left: 1.5rem;
-    margin-top: 4rem;
 }
 
 @media screen and (max-width: 868px) {
@@ -315,7 +314,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
     .home-content {
         margin-bottom: 0rem !important;
     }
@@ -343,6 +342,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     width: 100%;
+}
+
+.about img {
+    margin-top: 5.5rem !important;
 }
 
 .about .card {
@@ -534,130 +537,32 @@
 
 .project {
     margin-top: 15rem;
-}
-
-.collection {
-    overflow: hidden;
-    padding: 8% 40px;
     position: relative;
-    margin-top: 5rem;
-    width: 100%;
-    height: 100%;
-
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
 }
 
-.collection .grow1 h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: rgb(44, 171, 15);
-    margin-bottom: 1rem;
-}
-
-.collection .grow1 h4 {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 25px;
-    font-weight: 200;
-    margin-bottom: 1rem;
-}
-
-.collection .grow1 p {
+.project h4, p {
     font-family: "Source Code Pro", sans-serif;
-    color: white;
 }
 
-.collection .grow1 {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    border-radius: 10px;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .middle a i {
-    background-color: white;
-    border-radius: 50px;
-    font-weight: 700;
-    box-shadow: 0 0 0 2px white;
-    font-size: 50px;
-  }
-  
-  .collection .grow1:hover .image {
-    opacity: 0.3;
-    transform: scale(1.02);
-  }
-  
-  .collection .grow1:hover .middle {
-    opacity: 1;
-  }
-  
-  .text a {
-    letter-spacing: 2px;
+.project .card {
     border: none;
-    color: rgb(44, 171, 15);
-    font-size: 13px;
-    padding: 16px 32px;
-  }
+    background-color: transparent !important;
+    transition: background 0.5s, transform 0.5s;
+}
 
-  .text a .fa-link-slash {
-    font-size: 30px;
-    border-radius: 50%;
-    padding: 11px 7px;
-  }
-
-@media screen and (max-width: 868px) {
-    .collection {
-        height: 100%;
-        width: 100%;
-    }
-    .collection h4 {
-        font-size: 20px !important;
-    }
-    .collection p {
-        font-size: 15px;
-    }
-    .collection {
-        margin-top: 5rem;
-        width: 100%;
-        height: 100%;
-
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
-    }
-    .collection .grow1 {
-        width: 100%;
-    }
+.project .card:hover {
+    transform: translateY(-10px);
+    transition: .3s;
 }
 
 @media screen and (max-width: 410px) {
+    .project {
+        margin-top: 3rem !important;
+    }
     #product-swiped {
         overflow: hidden;
         padding: 0px 30px;
+        margin-bottom: 8rem !important;
     }
     .swiper-wrapper .card {
         width: 100%;
@@ -780,6 +685,17 @@ hr {
 
 .container .fill textarea::placeholder {
     font-family: "Source Code Pro", sans-serif;
+}
+
+.container input {
+    background-image: url(img/codeanimated2.gif);
+}
+
+.container textarea {
+    background-image: url(img/codeanimated2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media only screen and (max-width: 868px) {
