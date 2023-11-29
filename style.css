@@ -84,7 +84,6 @@
         font-size: 30px;
     }
     .navbar .offcanvas-header {
-        border-left: 1px solid rgba(44, 171, 15, 0.52);
         border-bottom: 1px solid rgba(44, 171, 15, 0.216);
         background-color: black !important;
         color: white !important;
@@ -105,7 +104,6 @@
     }
     .navbar .offcanvas-body {
         background-color: rgb(0, 0, 0);
-        border-left: 1px solid rgba(44, 171, 15, 0.52);
     }
     .navbar .offcanvas-body li a {
         color: white !important;
@@ -420,7 +418,7 @@
 
 /** SKILLS **/
 
-.skill {
+.services {
     width: 100%;
     height: 100%;
     margin-top: 7rem;
@@ -428,7 +426,7 @@
     color: white;
 }
 
-.skill .container h1 {
+.services .container h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: 800;
@@ -436,13 +434,13 @@
     color: rgb(44, 171, 15);
 }
 
-.skill p {
+.services p {
     font-family: "Source Code Pro", sans-serif;
     position: relative;
     color: white;
 }
 
-.skill .card {
+.services .card {
     margin-top: 3rem;
     color: white;
     background-color: #262626;
@@ -452,13 +450,13 @@
     transition: background 0.5s, transform 0.5s;
 }
 
-.skill .card:hover {
+.services .card:hover {
     background-color: rgb(28, 94, 13);
     transform: translateY(-10px);
     transition: .3s;
 }
 
-.skill .card h4 {
+.services .card h4 {
     font-family: "Source Code Pro", sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -498,23 +496,23 @@
 }
 
 @media screen and (max-width: 868px) {
-    .skill {
+    .services {
         height: 100%;
         width: 100%;
         margin-top: 0rem !important;
     }
-    .skill .card h4 {
+    .services .card h4 {
         text-align: center;
         font-size: 25px;
         font-weight: 700;
         width: 100%;
     }
-    .skill p {
+    .services p {
         font-family: "Montserrat", sans-serif;
         letter-spacing: 1px;
         font-size: 15px !important;
     }
-    .skill .card {
+    .services .card {
         padding: 10px 10px 5px 10px !important;
         margin-top: 0rem !important;
         border-radius: 10px;
@@ -522,10 +520,10 @@
     }
 }
 @media screen and (max-width: 622px) {
-    .skill {
+    .services {
         width: 100%
     }
-    .skill .card {
+    .services .card {
         width: 100%;
         height: 100%
     }
@@ -540,11 +538,16 @@
     position: relative;
 }
 
+.project .disc {
+    overflow: hidden;
+}
+
 .project h4, p {
     font-family: "Source Code Pro", sans-serif;
 }
 
 .project .card {
+    overflow: hidden;
     border: none;
     background-color: transparent !important;
     transition: background 0.5s, transform 0.5s;
@@ -573,6 +576,117 @@
     }
 }
 
+/******SKILLS******/
+
+.skill {
+    position: relative;
+}
+
+.skill h1 {
+    margin-top: 5rem;
+    font-weight: 800;
+    color: rgb(44, 171, 15);
+}
+
+.techskills {
+    margin-top: 5rem;
+}
+
+.progress {
+    background-color: #262626 !important;
+}
+
+.skill .bxl-html5 {
+    color: rgba(255, 60, 0, 0.944);
+}
+
+.skill .bxl-css3 {
+    color: rgba(30, 30, 255, 0.774)
+}
+
+.skill .bxl-javascript {
+    color: yellow;
+}
+
+.skill .bxl-bootstrap {
+    color: rgb(162, 0, 255);
+}
+
+.skill .bxl-react {
+    color: cyan;
+}
+
+.skill .bxl-php {
+    color: rgb(186, 54, 186);
+}
+
+.skill img {
+    position: relative;
+}
+
+.skill .card {
+    background-color: #262626;
+}
+
+.skill .card h4 {
+    margin-top: 1rem;
+    color: white;
+}
+
+@media screen and (max-width: 410px) {
+    .skill h1 {
+        font-size: 40px;
+        margin-top: 5rem;
+        font-weight: 800;
+        color: rgb(44, 171, 15);
+    }
+    .techskills {
+        margin-top: 2rem;
+    }
+}
+
+/*****RESOURCES*******/
+
+.resources {
+    display: flex;
+    margin-top: 6rem;
+}
+
+.resources {
+    position: relative;
+}
+
+.resources h1 {
+    position: relative;
+    font-weight: 800;
+    color: rgb(44, 171, 15);
+}
+
+.resources .card-header h4 {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.resources .card {
+    color: rgb(255, 255, 255);
+    height: 100%;
+    transition: .3s;
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px #262626;
+    transition: .5s;
+}
+
+.resources .card:hover {
+    background-color: #262626;
+    box-shadow: 0 0 0 1px rgb(176, 176, 176);
+}
+
+.resources .card-body {
+    color: rgb(47, 255, 0);
+}
 
 /* footer */
 

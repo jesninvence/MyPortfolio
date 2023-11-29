@@ -17,6 +17,7 @@
     <link rel="icon" href="img/jlogo.jpg" type="image/icon">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="scss.sass">
     <script type="text/javascript">
         (function() {
             emailjs.init("user_c1xJwbKcOR81SJYwveSZ2");
@@ -31,8 +32,10 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#skill">Services</a>
+            <a href="#services">Services</a>
             <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#resources">Resources</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -63,6 +66,12 @@
                             <a class="nav-link active" aria-current="page" href="#project">Projects</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#resources">Resources</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
                         </li>
                     </ul>
@@ -90,7 +99,7 @@
                         <a href="files/Jesnin Vence RESUME.pdf" download class="btn-box">RESUME <i class='bx bx-download' ></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 hide-sm" data-aos="fade-left">
+                <div class="col-12 col-sm-6" data-aos="fade-left">
                     <div class="card">
                         <img src="img/Jesnin.png" class="profile" width="90%">
                     </div>
@@ -113,7 +122,7 @@
             </div>
         </div>
     </div>
-    <div class="skill" id="skill">
+    <div class="services" id="services">
         <div class="container">
             <h1 data-aos="slide-right">Services</h1>
             <p data-aos="slide-down">If you have a vision, no matter how difficult things are, everything just becomes a process</p>
@@ -139,42 +148,43 @@
             </div>
         </div>
     </div>
-    <div class="project">
+    <div class="project" id="project">
         <div class="container">
             <div class="row g-3">
-                <div class="col-4 hide-sm">
+                <div class="col-4 hide-sm" data-aos="slide-up">
                     <img src="img/Developer activity-pana.png" alt="" width="100%">
                 </div>
                 <div class="col-12 col-sm-8">
-                    <div class="disc" data-aos="zoom-fade-down">
+                    <div class="disc">
                         <br><br><br>
-                        <h1 class="text-start">Latest Project</h1>
-                        <h4 class="text-start">Here's my latest friendly exercise Project</h4>
-                        <p class="text-start">Each project is Responsiveness. Here are some of my works.</p>
+                        <h1 class="text-start" data-aos="slide-down">Latest Project</h1>
+                        <h4 class="text-start" data-aos="slide-right">Here's my latest friendly exercise Project</h4>
+                        <p class="text-start" data-aos="slide-left">Each project is Responsiveness. Here are some of my works.</p>
+                        <p>Do you have a project in mind? Or would like to colab? Feel free to contact me. You can find me at various places around the web, including Twitter and Instagram. Or send me an email</p>
                     </div>
                 </div>
                 <div class="col-4 hide-sm">
-                    <div class="card">
+                    <div class="card" data-aos="slide-up">
                         <a href="https://jesninvence.github.io/Straporigin/"><img src="img/strapweb3.png" class="image" alt="" width="100%"></a>
                     </div>
                 </div>
                 <div class="col-4 hide-sm">
-                    <div class="card">
+                    <div class="card" data-aos="slide-up">
                         <a href="lostpage.html"><img src="img/199xwebw.png" class="image" alt="" width="100%"></a>
                     </div>
                 </div>
                 <div class="col-4 hide-sm">
-                    <div class="card">
+                    <div class="card" data-aos="slide-up">
                         <a href="lostpage.html"><img src="img/jflixweb.png" class="image" alt="" width="100%"></a>
                     </div>
                 </div>
                 <div class="col-4 hide-sm">
-                    <div class="card">
+                    <div class="card" data-aos="slide-up">
                         <a href="lostpage.html"><img src="img/gvhweb1.png" class="image" alt="" width="100%"></a>
                     </div>
                 </div>
                 <div class="col-4 hide-sm">
-                    <div class="card">
+                    <div class="card" data-aos="slide-up">
                         <a href="lostpage.html"><img src="img/dcweb4.png" class="image" alt="" width="100%"></a>
                     </div>
                 </div>
@@ -207,6 +217,192 @@
             <div class="swiper-slide">
                 <div class="card bg-white h-100">
                     <a href="lostpage.html"><img src="img/jflixweb.png" class="image" alt="" width="100%"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skill" id="skills">
+        <div class="container">
+            <h1 data-aos="slide-right">My Skills</h1>
+            <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                    <div class="techskills">
+                        <h5 class="text-white" data-aos="slide-up"><i class='bx bxl-html5' ></i> HTML</h5>
+                    <div class="progress" data-aos="slide-up">
+                        <div class="progress-bar progress-bar" role="progressbar" style="width: 90%; background-color: rgb(44, 171, 15);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                    <br>
+                    <h5 class="text-white" data-aos="slide-up"><i class='bx bxl-bootstrap' ></i> Bootstrap</h5>
+                    <div class="progress" data-aos="slide-up">
+                        <div class="progress-bar progress-bar" role="progressbar" style="width: 90%; background-color: rgb(44, 171, 15);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                    <br>
+                    <h5 class="text-white" data-aos="slide-up"><i class='bx bxl-css3' ></i> CSS</h5>
+                    <div class="progress" data-aos="slide-up">
+                        <div class="progress-bar progress-bar" role="progressbar" style="width: 70%; background-color: rgb(44, 171, 15);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                    <br>
+                    <h5 class="text-white" data-aos="slide-up"><i class='bx bxl-javascript' ></i> JavaScript</h5>
+                    <div class="progress" data-aos="slide-up">
+                        <div class="progress-bar progress-bar" role="progressbar" style="width: 65%; background-color: rgb(44, 171, 15);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                    <br>
+                    <h5 class="text-white" data-aos="slide-up"> MySql</h5>
+                    <div class="progress" data-aos="slide-up">
+                        <div class="progress-bar progress-bar" role="progressbar" style="width: 50%; background-color: rgb(44, 171, 15);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <br>
+                    <h5 class="text-white" data-aos="slide-up"><i class='bx bxl-react' ></i> React</h5>
+                    <div class="progress" data-aos="slide-up">
+                        <div class="progress-bar progress-bar" role="progressbar" style="width: 45%; background-color: rgb(44, 171, 15);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">45%</div>
+                    </div>
+                    <br>
+                    <h5 class="text-white" data-aos="slide-up"><i class='bx bxl-php' ></i> Php</h5>
+                    <div class="progress" data-aos="slide-up">
+                        <div class="progress-bar progress-bar" role="progressbar" style="width: 30%; background-color: rgb(44, 171, 15);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">30%</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="card" data-aos="slide-up">
+                                <h4 class="text-center">Creativity</h4>
+                                <img src="img/Creativity-rafiki.png" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" data-aos="slide-up">
+                                <h4 class="text-center">Communication</h4>
+                                <img src="img/Online tech talks-rafiki.png" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" data-aos="slide-up">
+                                <h4 class="text-center">Problem Sovling</h4>
+                                <img src="img/Problem solving-pana.png" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" data-aos="slide-up">
+                                <h4 class="text-center">Teamwork</h4>
+                                <img src="img/Team work-bro.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resources" id="resources">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-sm-4" data-aos="slide-right">
+                    <img src="img/Memory storage-pana.png" alt="" width="100%">
+                </div>
+                <div class="col-12 col-sm-8">
+                    <br><br><br>
+                    <h1 data-aos="slide-down">Resources</h1>
+                    <p class="text-white" data-aos="slide-down">A collection of cool things i find and use!</p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>Tools</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JAVASCRIPT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>Code Editors</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Visual Studio Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>Web Frameworks</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>React (JS - Frontend)</p>
+                            <p>Laravel (PHP - Backend)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>CSS Frameworks</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>Hosting</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Github Pages</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>Data Storage</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>MySql</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>Code Hosting</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Github</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>Color Inspiration</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Coolors</p>
+                            <p>MyColor.space</p>
+                            <p>Colorhunt</p>
+                            <p>HappyHues</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card" data-aos="slide-up">
+                        <div class="card-header">
+                            <h4>Icons</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Fontawesome</p>
+                            <p>Lordicons</p>
+                            <p>Boxicons</p>
+                            <p>Remix Icons</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -258,7 +454,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="home-sci text-center">
+                    <div class="home-sci text-center" data-aos="slide-right">
                         <a href="https://www.facebook.com/vence.stopid"><i class='bx bxl-facebook'></i></a>
                         <a href="https://www.instagram.com/elshhhnin/"><i class='bx bxl-instagram' ></i></a>
                         <a href="https://github.com/jesninvence"><i class="fa-brands fa-github"></i></a>
